@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
 
 const CategorySlider = ({data}) => {
   const scrollX = new Animated.Value(0);
-
+  // console.warn(data);
   if (data && data.length) {
     return (
       <View style={{flex: 1}}>
@@ -36,9 +36,10 @@ const CategorySlider = ({data}) => {
           renderItem={(item) => {
             return <CategorySliderItem item={item.item} />;
           }}
-          onScroll={Animated.event([
-            {nativeEvent: {contentOffset: {x: scrollX}}},
-          ])}
+          onScroll={Animated.event(
+            [{nativeEvent: {contentOffset: {x: scrollX}}}],
+            {useNativeDriver: false},
+          )}
         />
       </View>
     );

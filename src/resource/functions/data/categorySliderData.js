@@ -1,45 +1,30 @@
 export const categorySliderData = [
   {
-    title: 'Bottom',
-    description:
-      'Corfu is absolutely romantic and calm in the evenings, especially next to the sea. Few days ago me and my husband Pete had a chance to spend an hour in Corfu Town when sun was going down and day was slowly moving to its end. It was absolutely charming and beautiful.',
+    title: 'Dribbble',
+    description: 'was going down and d',
     image:
-      'https://images.unsplash.com/photo-1496747611176-843222e1e57c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1952&q=80',
+      'https://i.pinimg.com/originals/d9/90/dc/d990dc3c8ec0b5d6be7ccf13a112ce77.jpg',
     id: 1,
+    icon: 'https://simpleicon.com/wp-content/uploads/dribbble.png',
+    backgroundColor: {backgroundColor: '#C70C83'},
   },
   {
-    title: 'Dress',
-    description: 'Woman in a summer dress',
-    image:
-      'https://images.unsplash.com/photo-1562373353-7db88744f982?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=896&q=80',
+    title: 'Twitter',
+    description: 'Woman ',
+    image: 'https://i.ytimg.com/vi/VwVVKcXTgag/maxresdefault.jpg',
     id: 2,
+    icon:
+      'https://cdn.icon-icons.com/icons2/38/PNG/512/twitter_social_5083.png',
+    backgroundColor: {backgroundColor: '#1881D5'},
   },
   {
-    title: 'Shoes',
+    title: 'Youtube',
     description: 'Woman in a dress',
     image:
-      'https://images.unsplash.com/photo-1600075110701-6ea93b9b5f70?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+      'https://d26lpennugtm8s.cloudfront.net/stores/093/715/products/colores-rojo-f325b21863fa72ffad15132738364013-1024-1024.jpg',
     id: 3,
-  },
-  {
-    title: 'T-Shirt',
-    description: ' beautiful woman in a dress.',
-    image:
-      'https://images.unsplash.com/photo-1586471176822-f1beeaa03fe4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
-    id: 4,
-  },
-  {
-    title: 'Hoddies',
-    description: ' beautiful woman in a dress.',
-    image:
-      'https://images.unsplash.com/photo-1586471176822-f1beeaa03fe4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
-    id: 5,
-  },
-  {
-    title: 'Underwear',
-    description: ' beautiful woman in a dress.',
-    image:
-      'https://images.unsplash.com/photo-1586471176822-f1beeaa03fe4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
-    id: 6,
+    icon:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7CCniMmcfAEjGmO1W8nxo1XZBodL_SU6tTw&usqp=CAU',
+    backgroundColor: {backgroundColor: '#BB2A31'},
   },
 ];

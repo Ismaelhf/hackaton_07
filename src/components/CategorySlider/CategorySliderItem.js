@@ -14,9 +14,9 @@ const styles = StyleSheet.create({
   },
   textView: {
     position: 'absolute',
-    bottom: 25,
-    margin: 10,
-    left: 7,
+    bottom: 2,
+    margin: 8,
+    left: 1,
   },
   image: {
     width: width / 3.5,
@@ -28,26 +28,54 @@ const styles = StyleSheet.create({
     fontSize: 16,
     shadowColor: '#000000',
     shadowOffset: {width: 0.8, height: 0.8},
-    textAlign: 'center',
+    textAlign: 'left',
+    shadowOpacity: 1,
+    shadowRadius: 3,
+    marginBottom: 1,
+    fontWeight: 'bold',
+    elevation: 5,
+  },
+  itemText: {
+    color: 'white',
+    fontSize: 10,
+    shadowColor: '#000000',
+    // shadowOffset: {width: 0.8, height: 0.8},
+    textAlign: 'left',
     shadowOpacity: 1,
     shadowRadius: 3,
     marginBottom: 5,
-    fontWeight: 'bold',
+    // fontWeight: 'bold',
     elevation: 5,
+  },
+  icon: {
+    position: 'absolute',
+    bottom: 30,
+    margin: 10,
+    // left: 0,
+    width: 25,
+    height: 25,
   },
 });
 
 const CategorySliderItem = ({item}) => {
+  // console.warn(item.image);
   return (
-    <View style={styles.container}>
-      <Image
+    <View style={[styles.container, item.backgroundColor]}>
+      {/* <Image
         style={styles.image}
         source={{
           uri: item.image,
         }}
-      />
+      /> */}
       <View style={styles.textView}>
+        <Image
+          style={styles.icon}
+          source={{
+            uri: item.icon,
+          }}
+        />
         <Text style={styles.itemTitle}>{item.title}</Text>
+        <Text style={styles.itemText}>{item.description}</Text>
       </View>
     </View>
   );
